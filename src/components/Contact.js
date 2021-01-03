@@ -21,7 +21,7 @@ const Contact = () => {
            message: message,
        })
        .then(() => {
-        alert("Your message has been submitted, thanks👍");
+        alert("Mensagem enviada com sucesso! 👍");
            setLoader(false);
        })
        .catch((error) => {
