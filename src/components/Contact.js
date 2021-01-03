@@ -39,11 +39,12 @@ const Contact = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <h1>Contact Us 🤳</h1>
+      <h1>Contato</h1>
 
-      <label>Name</label>
-      <input placeholder="Name"
+      <label>Nome</label>
+      <input placeholder="Nome"
              required
+             autoFocus
              value={name}
              onChange={(e) => setName(e.target.value)}
       />
@@ -54,8 +55,8 @@ const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)} />
 
-      <label>Message</label>
-      <textarea placeholder="Message"
+      <label>Mensagem</label>
+      <textarea placeholder="Mensagem"
                  required
                  value={message}
                  onChange={(e) => setMessage(e.target.value)}>
@@ -63,7 +64,7 @@ const Contact = () => {
                  </textarea>
 
       <button type="submit"
-      style={{ background: loader ? "#ccc" : "rgb(2, 2, 110)"}}>Submit</button>
+      style={{ background: loader ? "#ccc" : "rgb(2, 2, 110)"}}>Enviar</button>
     </form>
   );
 };
